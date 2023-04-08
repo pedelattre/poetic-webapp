@@ -1,5 +1,7 @@
 # Poetic-webapp
 
+Build while learning React on OpenClassroom: https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135204-prenez-en-main-create-react-app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
