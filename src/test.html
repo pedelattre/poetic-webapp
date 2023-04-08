@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Démo</title>
+    </head>
+    <body>
+        <div id="root">
+             <!-- Le contenu de cet élément HTML sera remplacé par mes composants React -->
+            Hello world!
+        </div>
+                <!-- Charge React -->
+        <!-- Remarque : pour le déploiement, remplacez "development.js" par "production.min.js" -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            
+            function Header() {
+                const titre = "Receuil de poèmes"
+                return (<h1>{titre.toUpperCase()}</h1>)
+            }
+            function Description() {
+                const text = "Ici vous pourrez lire de nombreux poèmes"
+                const emojis = "🤑🤑🤑"
+                return (<p>{ text + emojis }</p>)
+            }
+
+            function Cart() {
+                const price1 = "10"
+                const price2 = "100"
+                const price3 = "1000"
+                return (<p>
+                    <h2>Panier</h2>
+                    <ul>
+                        <li>Rosa fâchée. Victor Hugo. Prix = { price1 }€</li>
+                        <li>Il n'y a pas d'amour heureux. Louis Aragon. Prix = { price2 }€</li>
+                        <li>Quand vous serez bien vieille. Pierre de Ronsard. Prix = { price3 }€</li>
+                    </ul>
+                </p>)
+            }
+            function Banner() {
+                return (<div>
+                    <Header />
+                    <Cart />
+                    <Description />
+                </div>)
+            }
+            ReactDOM.render(<React.Fragment><Banner /></React.Fragment>, document.getElementById("root"))
+        </script>
+
+    </body>
+</html>
