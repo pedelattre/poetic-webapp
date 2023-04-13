@@ -2,6 +2,9 @@
 
 Build while learning React on OpenClassroom: https://openclassrooms.com/fr/courses/7008001-debutez-avec-react/7135204-prenez-en-main-create-react-app
 
+# Note
+Once cloned on your local desktop, check that the latest version of node and npm are installed on your computer (use commands npm latest as a root user) and that you downloaded all the required node modules
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
